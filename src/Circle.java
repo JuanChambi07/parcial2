@@ -32,7 +32,10 @@
          this.perimeter = perimeter;
      }
      public String toString (){
-         return String.format("%d %s ",getColor(), getFilled(),"%a ",getRadius());
+         return String.format("%d %d %d",
+                 this.getColor(),
+                 this.getFilled(),
+                 this.getRadius());
      }
      Circle(){
 
