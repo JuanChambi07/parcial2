@@ -1,9 +1,11 @@
-public class Rectangulo {
+class Rectangle extends Shape {
 
-    public double width;
-    public double length;
-    private double area;
-    private double Perimeter;
+    public double width =1.0;
+    public double length=1.0;
+    public double area;
+    public double Perimeter;
+
+
 
     public double getWidth() {
         return width;
@@ -36,6 +38,12 @@ public class Rectangulo {
     public void setPerimeter(double perimeter) {
         Perimeter = perimeter;
     }
+    public String toString (){
+        return String.format("%d %s ",getColor(), getFilled(),"%a %x ",getWidth(),getLength());
+    }
+     Rectangle() {
+
+    }
     Rectangle(double width,double length){
 
     }
@@ -45,6 +53,5 @@ public class Rectangulo {
         this.setColor(color);
         this.setFilled(filled);
     }
-
 
 }

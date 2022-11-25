@@ -1,9 +1,11 @@
 public class Main {
+    public static void main(String[] args){
+
+    }
 
 
 
 
-    Circulo caracteristica=new Circulo(15.5);
 
 
 
