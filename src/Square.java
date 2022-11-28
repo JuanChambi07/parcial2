@@ -21,7 +21,7 @@ private double side;
         this.length = side;
     }
     public String toString (){
-        return String.format("%d %s ",getColor(), getFilled(),"%a %x ",getWidth(),getLength());
+        return String.format("%s %s %s %b %s %f %s %f %s ","Square[Rectagle[Shape[color=",getColor(),"filled=", getFilled(),"]width=",getWidth(),"length=",getLength(),"]");
     }
     Square(){
 

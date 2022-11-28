@@ -1,7 +1,7 @@
 
 
  class Circle extends Shape {
-    public double radius =1.0;
+    public double radius ;
     public double area;
 
     public double perimeter;
@@ -32,13 +32,12 @@
          this.perimeter = perimeter;
      }
      public String toString (){
-         return String.format("%d %d %d",
-                 this.getColor(),
-                 this.getFilled(),
-                 this.getRadius());
+         return String.format("%s %s %s %b %s %f %s" ,"Circle[Shape[color=",this.getColor(),"filled=",this.getFilled(),"]radius=", this.getRadius(),"]");
+
+
      }
      Circle(){
-
+    setRadius(1.0);
      }
      Circle(double radius){
          this.setRadius(radius);

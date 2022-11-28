@@ -1,7 +1,7 @@
 class Rectangle extends Shape {
 
-    public double width =1.0;
-    public double length=1.0;
+    public double width;
+    public double length;
     public double area;
     public double Perimeter;
 
@@ -39,10 +39,11 @@ class Rectangle extends Shape {
         Perimeter = perimeter;
     }
     public String toString (){
-        return String.format("%d %s ",getColor(), getFilled(),"%a %x ",getWidth(),getLength());
+        return String.format("%s %s %s %b %s %f %s %f %s","Rectagle[Shape=[color=",getColor(),"filled=", getFilled(),"]width=",getWidth(),"length=",getLength(),"]");
     }
      Rectangle() {
-
+    setWidth(1.0);
+    setLength(1.0);
     }
     Rectangle(double width,double length){
 
